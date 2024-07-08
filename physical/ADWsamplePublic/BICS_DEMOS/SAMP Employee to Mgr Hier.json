@@ -1,0 +1,27 @@
+{
+  "physicalTable" : {
+    "name" : "SAMP Employee to Mgr Hier",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "MEMBER_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "ANCESTOR_KEY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : false
+    }, {
+      "name" : "DISTANCE",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "IS_LEAF",
+      "dataType" : "INT",
+      "length" : 0,
+      "nullable" : false
+    } ]
+  }
+}

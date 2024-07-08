@@ -1,0 +1,27 @@
+{
+  "presentationTable" : {
+    "name" : "Airlines Fact",
+    "presentationColumns" : [ {
+      "name" : "F_FLIGHTS",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Fact.F_FLIGHTS"
+    }, {
+      "name" : "W_DEST_TEMP",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Fact.W_DEST_TEMP"
+    }, {
+      "name" : "W_DEST_TEMP_MAX",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Fact.W_DEST_TEMP_MAX"
+    }, {
+      "name" : "W_DEST_TEMP_MIN",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Fact.W_DEST_TEMP_MIN"
+    }, {
+      "name" : "W_ORIG_TEMP",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Fact.W_ORIG_TEMP"
+    }, {
+      "name" : "W_ORIG_TEMP_MAX",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Fact.W_ORIG_TEMP_MAX"
+    }, {
+      "name" : "W_ORIG_TEMP_MIN",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Fact.W_ORIG_TEMP_MIN"
+    } ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "HC_D_ITEMS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ITEM",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "ITEM_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "MANUFACTURER",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "ON_CONTRACT",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

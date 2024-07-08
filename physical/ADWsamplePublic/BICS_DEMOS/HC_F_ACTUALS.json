@@ -1,0 +1,51 @@
+{
+  "physicalTable" : {
+    "name" : "HC_F_ACTUALS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACCOUNT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "ACTUAL",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "BUDGET",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "DATE_ID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:ADWsamplePublic.BICS_DEMOS.HC_D_DEPARTMENTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsamplePublic.BICS_DEMOS.HC_F_ACTUALS.DEPARTMENT",
+        "rightColumn" : "physicalColumn:ADWsamplePublic.BICS_DEMOS.HC_D_DEPARTMENTS.DEPARTMENT"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:ADWsamplePublic.BICS_DEMOS.HC_D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsamplePublic.BICS_DEMOS.HC_F_ACTUALS.DATE_ID",
+        "rightColumn" : "physicalColumn:ADWsamplePublic.BICS_DEMOS.HC_D_TIME.DATE_ID"
+      } ]
+    } ]
+  }
+}

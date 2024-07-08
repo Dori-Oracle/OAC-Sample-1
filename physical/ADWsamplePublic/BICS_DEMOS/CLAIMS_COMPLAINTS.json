@@ -1,0 +1,46 @@
+{
+  "physicalTable" : {
+    "name" : "CLAIMS_COMPLAINTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CLAIM_DATE",
+      "dataType" : "DATETIME",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "CLAIM_DEALER",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "CLAIM_PART_TOT_GLOBL_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 12,
+      "nullable" : true
+    }, {
+      "name" : "CLAIM_TOT_GLOBL_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 12,
+      "nullable" : true
+    }, {
+      "name" : "COMPLAINT_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : true
+    }, {
+      "name" : "RECORDID",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "SUPPLIER_ULTIMATENAME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

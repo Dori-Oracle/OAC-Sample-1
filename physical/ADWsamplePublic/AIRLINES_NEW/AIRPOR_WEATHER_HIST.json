@@ -1,0 +1,126 @@
+{
+  "physicalTable" : {
+    "name" : "AIRPOR_WEATHER_HIST",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ROW_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "WD_FOG",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "WD_PRECIP",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WD_SLV_PRESS",
+      "dataType" : "DOUBLE",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "WD_SNOW_DEPTH",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "WD_TEMP",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WD_TEMP_MAX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WD_TEMP_MIN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WD_VISI",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WD_WIND_GUST",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WD_WIND_MAX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WD_WIND_MEAN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WO_FOG",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "WO_PRECIP",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WO_SLV_PRESS",
+      "dataType" : "DOUBLE",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "WO_SNOW_DEPTH",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "WO_TEMP",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WO_TEMP_MAX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WO_TEMP_MIN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WO_VISI",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WO_WIND_GUST",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WO_WIND_MAX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WO_WIND_MEAN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

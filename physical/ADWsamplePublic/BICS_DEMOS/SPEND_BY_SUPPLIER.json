@@ -1,0 +1,51 @@
+{
+  "physicalTable" : {
+    "name" : "SPEND_BY_SUPPLIER",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BUYER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "CONTRACT_SPEND",
+      "dataType" : "DOUBLE",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "ENTRY_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "MONTH",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "NON_CONTRACT_SPEND",
+      "dataType" : "DOUBLE",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "SUPPLIER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_SPEND",
+      "dataType" : "DOUBLE",
+      "length" : 8,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

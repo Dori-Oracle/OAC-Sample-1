@@ -1,0 +1,61 @@
+{
+  "physicalTable" : {
+    "name" : "SDS_EXTN_ATTR_LABELS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACTIVE_FLG",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "CDC$_DML_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "CDC$_RPL_LAST_UPDATE_DATE",
+      "dataType" : "TIMESTAMP",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "CDC$_SRC_LAST_UPDATE_DATE",
+      "dataType" : "TIMESTAMP",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COLUMN_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : true
+    }, {
+      "name" : "DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 2000,
+      "nullable" : true
+    }, {
+      "name" : "LABEL",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "LANGUAGE_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "TABLE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : true
+    }, {
+      "name" : "CDC$_RPL_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

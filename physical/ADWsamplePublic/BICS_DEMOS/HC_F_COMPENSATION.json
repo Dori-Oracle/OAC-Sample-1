@@ -1,0 +1,46 @@
+{
+  "physicalTable" : {
+    "name" : "HC_F_COMPENSATION",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BASE_COMP",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "DATE_ID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "EMPLOYEE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "HEADCOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "OVERTIME_COMP",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

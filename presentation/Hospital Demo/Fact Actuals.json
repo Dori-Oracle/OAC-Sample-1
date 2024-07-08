@@ -1,0 +1,9 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Actuals",
+    "presentationColumns" : [ {
+      "name" : "Actual",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Fact Actuals.Actual"
+    } ]
+  }
+}

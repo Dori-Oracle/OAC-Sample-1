@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "NAB_C_FACT_DRAWDOWNS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "CUSTID",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "DRAWDOWN_DATE",
+      "dataType" : "DATETIME",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "DRAW_DOWN_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "OPPTYID",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

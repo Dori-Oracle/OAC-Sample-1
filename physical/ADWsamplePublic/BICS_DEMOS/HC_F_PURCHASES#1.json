@@ -1,0 +1,126 @@
+{
+  "physicalTable" : {
+    "name" : "HC_F_PURCHASES#1",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BUYER",
+      "dataType" : "VARCHAR",
+      "length" : 14,
+      "nullable" : true
+    }, {
+      "name" : "CONTRACT_QTY",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "CONTRACT_SPEND_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "CONTRACT_UNIT_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "DATE_ID",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "ENTRY_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "INVOICE_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "ITEM",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "NON_CONTRACT_QTY",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "NON_CONTRACT_SPEND_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "NON_CONTRACT_UNIT_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "PO_COUNT",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "PO_LINE_COUNT",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "PO_LINE_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "PO_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "PO_RELEASE_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 6,
+      "nullable" : true
+    }, {
+      "name" : "PURCHASE_ORDER",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "SUPPLIER",
+      "dataType" : "VARCHAR",
+      "length" : 31,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_QTY",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_SPEND_AMT",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "TOTAL_UNIT_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "UOM",
+      "dataType" : "VARCHAR",
+      "length" : 12,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

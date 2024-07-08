@@ -1,0 +1,116 @@
+{
+  "presentationTable" : {
+    "name" : "Date",
+    "presentationColumns" : [ {
+      "name" : "BEG_OF_MTH_WID",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.BEG_OF_MTH_WID"
+    }, {
+      "name" : "BEG_OF_QTR_WID",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.BEG_OF_QTR_WID"
+    }, {
+      "name" : "BEG_OF_WEEK_WID",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.BEG_OF_WEEK_WID"
+    }, {
+      "name" : "CAL_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CAL_MONTH"
+    }, {
+      "name" : "CAL_MONTH_END_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CAL_MONTH_END_DATE"
+    }, {
+      "name" : "CAL_QTR",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CAL_QTR"
+    }, {
+      "name" : "CAL_QTR_END_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CAL_QTR_END_DATE"
+    }, {
+      "name" : "CAL_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CAL_WEEK"
+    }, {
+      "name" : "CAL_WEEK_END_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CAL_WEEK_END_DATE"
+    }, {
+      "name" : "CAL_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CAL_YEAR"
+    }, {
+      "name" : "CAL_YEAR_END_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CAL_YEAR_END_DATE"
+    }, {
+      "name" : "CALENDAR_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.CALENDAR_DATE"
+    }, {
+      "name" : "DAY_KEY",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.DAY_KEY"
+    }, {
+      "name" : "DAY_OF_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.DAY_OF_MONTH"
+    }, {
+      "name" : "DAY_OF_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.DAY_OF_WEEK"
+    }, {
+      "name" : "DAY_OF_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.DAY_OF_YEAR"
+    }, {
+      "name" : "DAYS_IN_MTH",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.DAYS_IN_MTH"
+    }, {
+      "name" : "DAYS_IN_QTR",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.DAYS_IN_QTR"
+    }, {
+      "name" : "DAYS_IN_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.DAYS_IN_WEEK"
+    }, {
+      "name" : "DAYS_IN_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.DAYS_IN_YEAR"
+    }, {
+      "name" : "HOLIDAY",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.HOLIDAY"
+    }, {
+      "name" : "JULIAN_DAY_NUM",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.JULIAN_DAY_NUM"
+    }, {
+      "name" : "JULIAN_MONTH_NUM",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.JULIAN_MONTH_NUM"
+    }, {
+      "name" : "JULIAN_QTR_NUM",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.JULIAN_QTR_NUM"
+    }, {
+      "name" : "JULIAN_WEEK_NUM",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.JULIAN_WEEK_NUM"
+    }, {
+      "name" : "PER_NAME_HALF",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.PER_NAME_HALF"
+    }, {
+      "name" : "PER_NAME_MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.PER_NAME_MONTH"
+    }, {
+      "name" : "PER_NAME_QTR",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.PER_NAME_QTR"
+    }, {
+      "name" : "PER_NAME_WEEK",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.PER_NAME_WEEK"
+    }, {
+      "name" : "PER_NAME_YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_TIME_DAY_D.PER_NAME_YEAR"
+    } ],
+    "hierarchies" : [ {
+      "name" : "SAMP_TIME_DAY_DDim",
+      "sourceLogicalTable" : "logicalTable:Employee Revenue.SAMP_TIME_DAY_D",
+      "levels" : [ {
+        "name" : "All Time",
+        "sourceLogicalLevel" : "logicalLevel:Employee Revenue.SAMP_TIME_DAY_D.All Time"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Employee Revenue.SAMP_TIME_DAY_D.Year",
+        "displayColumn" : "presentationColumn:Employee Revenue.Date.PER_NAME_YEAR"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Employee Revenue.SAMP_TIME_DAY_D.Month",
+        "displayColumn" : "presentationColumn:Employee Revenue.Date.PER_NAME_MONTH"
+      }, {
+        "name" : "SAMP_TIME_DAY_D Detail",
+        "sourceLogicalLevel" : "logicalLevel:Employee Revenue.SAMP_TIME_DAY_D.SAMP_TIME_DAY_D Detail",
+        "displayColumn" : "presentationColumn:Employee Revenue.Date.CALENDAR_DATE"
+      } ]
+    } ]
+  }
+}

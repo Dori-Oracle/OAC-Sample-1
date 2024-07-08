@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "Hospital Actuals",
+    "sourceBusinessModel" : "businessModel:HC Actuals",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Hospital Actuals.Time"
+    }, {
+      "name" : "presentationTable:Hospital Actuals.Department"
+    }, {
+      "name" : "presentationTable:Hospital Actuals.Fact Actuals"
+    } ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "physicalTable" : {
+    "name" : "DF_POS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "INVOICE",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "INVOICE_DATE",
+      "dataType" : "DATETIME",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "LOCATION",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "LOYALTY_ID",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "QTY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "RETAILER",
+      "dataType" : "CHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "ROW_ID",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "SKU",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "STATE",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "UNIT_PRICE",
+      "dataType" : "DOUBLE",
+      "length" : 30,
+      "nullable" : true
+    }, {
+      "name" : "VALUE",
+      "dataType" : "DOUBLE",
+      "length" : 30,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

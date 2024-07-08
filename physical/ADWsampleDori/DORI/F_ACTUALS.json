@@ -1,0 +1,73 @@
+{
+  "physicalTable" : {
+    "name" : "F_ACTUALS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DATE_ID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "HOSP_DEPT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "EMPLOYEE_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ACTUAL",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:ADWsampleDori.DORI.D_ACCOUNTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsampleDori.DORI.F_ACTUALS.ACCOUNT_ID",
+        "rightColumn" : "physicalColumn:ADWsampleDori.DORI.D_ACCOUNTS.ACCOUNT_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:ADWsampleDori.DORI.D_HOSP_DEPT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsampleDori.DORI.F_ACTUALS.HOSP_DEPT_ID",
+        "rightColumn" : "physicalColumn:ADWsampleDori.DORI.D_HOSP_DEPT.HOSP_DEPT_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:ADWsampleDori.DORI.D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsampleDori.DORI.F_ACTUALS.DATE_ID",
+        "rightColumn" : "physicalColumn:ADWsampleDori.DORI.D_TIME.DATE_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "physicalTable:ADWsampleDori.DORI.D_EMPLOYEES",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsampleDori.DORI.F_ACTUALS.EMPLOYEE_ID",
+        "rightColumn" : "physicalColumn:ADWsampleDori.DORI.D_EMPLOYEES.EMPLOYEE_ID"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

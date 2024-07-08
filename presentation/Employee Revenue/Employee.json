@@ -1,0 +1,22 @@
+{
+  "presentationTable" : {
+    "name" : "Employee",
+    "presentationColumns" : [ {
+      "name" : "EMPL_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_EMPL_D.EMPL_NAME"
+    }, {
+      "name" : "HIRE_DT",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_EMPL_D.HIRE_DT"
+    }, {
+      "name" : "POSTN_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_EMPL_D.POSTN_DESC"
+    }, {
+      "name" : "POSTN_LEVEL",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_EMPL_D.POSTN_LEVEL"
+    } ],
+    "hierarchies" : [ {
+      "name" : "SAMP_EMPL_DDim",
+      "sourceLogicalTable" : "logicalTable:Employee Revenue.SAMP_EMPL_D"
+    } ]
+  }
+}

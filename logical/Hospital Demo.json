@@ -1,0 +1,7 @@
+{
+  "businessModel" : {
+    "name" : "Hospital Demo",
+    "description" : "Use for Logical Model demonstrations",
+    "disable" : false
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "presentationTable" : {
+    "name" : "Department",
+    "presentationColumns" : [ {
+      "name" : "DEPARTMENT",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_D_DEPARTMENTS.DEPARTMENT"
+    }, {
+      "name" : "HOSPITAL",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_D_DEPARTMENTS.HOSPITAL",
+      "permissions" : [ {
+        "accessor" : "role:AuthenticatedUser",
+        "access" : "WRITE"
+      } ]
+    } ],
+    "hierarchies" : [ {
+      "name" : "HC_D_DEPARTMENTSDim",
+      "sourceLogicalTable" : "logicalTable:HC Actuals.HC_D_DEPARTMENTS",
+      "levels" : [ {
+        "name" : "HC_D_DEPARTMENTS Total",
+        "sourceLogicalLevel" : "logicalLevel:HC Actuals.HC_D_DEPARTMENTS.HC_D_DEPARTMENTS Total"
+      }, {
+        "name" : "HC_D_DEPARTMENTS Detail",
+        "sourceLogicalLevel" : "logicalLevel:HC Actuals.HC_D_DEPARTMENTS.HC_D_DEPARTMENTS Detail",
+        "displayColumn" : "presentationColumn:Hospital Actuals.Department.DEPARTMENT"
+      } ]
+    } ],
+    "permissions" : [ {
+      "accessor" : "role:AuthenticatedUser",
+      "access" : "WRITE"
+    } ]
+  }
+}

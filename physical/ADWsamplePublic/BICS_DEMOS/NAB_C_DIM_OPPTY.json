@@ -1,0 +1,36 @@
+{
+  "physicalTable" : {
+    "name" : "NAB_C_DIM_OPPTY",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AMOUNT_MM",
+      "dataType" : "INT",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "CREATED_DATE",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "OPPTYID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "OPPTYNAME",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

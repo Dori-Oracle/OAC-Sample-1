@@ -1,0 +1,42 @@
+{
+  "presentationTable" : {
+    "name" : "Airlines Attributes",
+    "presentationColumns" : [ {
+      "name" : "F_PILOT_ID",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.F_PILOT_ID"
+    }, {
+      "name" : "F_CARRIER",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.F_CARRIER"
+    }, {
+      "name" : "F_DEST",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.F_DEST"
+    }, {
+      "name" : "R_DEST_AIRPORT_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.R_DEST_AIRPORT_NAME"
+    }, {
+      "name" : "R_DEST_CITY_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.R_DEST_CITY_NAME"
+    }, {
+      "name" : "R_DEST_REGION_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.R_DEST_REGION_NAME"
+    }, {
+      "name" : "R_DEST_STATE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.R_DEST_STATE_NAME"
+    }, {
+      "name" : "F_ORIGIN",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.F_ORIGIN"
+    }, {
+      "name" : "R_ORIG_AIRPORT_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.R_ORIG_AIRPORT_NAME"
+    }, {
+      "name" : "R_ORIG_CITY_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.R_ORIG_CITY_NAME"
+    }, {
+      "name" : "R_ORIG_REGION_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.R_ORIG_REGION_NAME"
+    }, {
+      "name" : "R_ORIG_STATE_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Airlines Delay.Airlines Attributes.R_ORIG_STATE_NAME"
+    } ]
+  }
+}

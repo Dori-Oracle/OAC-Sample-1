@@ -1,0 +1,56 @@
+{
+  "physicalTable" : {
+    "name" : "NAB_C_FACT_OPPORTUNITIES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BANKERID",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CUSTID",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "OPPTYID",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "OPPTY_DATE",
+      "dataType" : "DATETIME",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "OPPTY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "OPPTY_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "OPPTY_VALUE",
+      "dataType" : "DOUBLE",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCTID",
+      "dataType" : "VARCHAR",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "SALES_STAGE",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

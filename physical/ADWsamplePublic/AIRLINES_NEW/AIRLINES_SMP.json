@@ -1,0 +1,436 @@
+{
+  "physicalTable" : {
+    "name" : "AIRLINES_SMP",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "W_DEST_WIND_GUST",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_WIND_MEAN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "R_DEST_REGION_NAME",
+      "dataType" : "CHAR",
+      "length" : 62,
+      "nullable" : true
+    }, {
+      "name" : "FD_SECURITYDELAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "R_DEST_STATE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "R_ORIG_AIRPORT_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_HAIL",
+      "dataType" : "VARCHAR",
+      "length" : 12,
+      "nullable" : true
+    }, {
+      "name" : "FD_ARRDELAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "R_ORIG_CITY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "P_AIRCRAFT_SEATS",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "R_ORIG_DIVISION_NAME",
+      "dataType" : "CHAR",
+      "length" : 62,
+      "nullable" : true
+    }, {
+      "name" : "R_ORIG_LATITUDE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FD_ARR_DELAY_GRP",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "R_ORIG_LONGITUDE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_RAIN",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "R_ORIG_REGION_NAME",
+      "dataType" : "CHAR",
+      "length" : 62,
+      "nullable" : true
+    }, {
+      "name" : "FD_DEPDELAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FT_WHEELSOFF",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "P_AIRCRAFT_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_FOG",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_SNOW",
+      "dataType" : "VARCHAR",
+      "length" : 12,
+      "nullable" : true
+    }, {
+      "name" : "FD_DEP_DELAY_GRP",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_HAIL",
+      "dataType" : "VARCHAR",
+      "length" : 12,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_SNOW_LEVEL",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "P_AIRCRAFT_YEAR",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_TEMP",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_TEMP_MAX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "FD_LATEAIRCRAFTDELAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_TEMP_MIN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_RAIN",
+      "dataType" : "VARCHAR",
+      "length" : 9,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_THUNDER",
+      "dataType" : "VARCHAR",
+      "length" : 15,
+      "nullable" : true
+    }, {
+      "name" : "FD_WEATHERDELAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FT_WHEELSON",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_RAIN_LEVEL",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_SEA_PRESSURE",
+      "dataType" : "DOUBLE",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_SNOW",
+      "dataType" : "VARCHAR",
+      "length" : 12,
+      "nullable" : true
+    }, {
+      "name" : "FT_ACTUALELAPSEDTIME",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_SNOW_LEVEL",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_TEMP",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_TEMP_MAX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "FT_ARRTIME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_TEMP_MIN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "F_AIRTIME",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_THUNDER",
+      "dataType" : "VARCHAR",
+      "length" : 15,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_VISI",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "FT_ARR_TIME_BLK",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_WIND_GUST",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_WIND_MAX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "W_ORIG_WIND_MEAN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "FT_CRSARRTIME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "X_ROW_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FT_CRSDEPTIME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "F_CANCELLED",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "FT_CRSELAPSEDTIME",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "FT_DEP_TIME_BLK",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "F_CARRIER",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "FT_TAXIIN",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "F_DEST",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "F_DISTANCE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "F_DISTANCE_GRP",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "F_FLIGHTNUM",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "F_FLIGHTS",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "F_FLIGHT_DATE",
+      "dataType" : "DATETIME",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "F_ORIGIN",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "F_PILOT_ID",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "F_ROUTE",
+      "dataType" : "VARCHAR",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "F_TAILNUM",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "P_AIRCRAFT_DETAIL",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "P_AIRCRAFT_MANUF",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "P_ENGINE_MANUF",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "R_DEST_AIRPORT_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "R_ORIG_STATE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_RAIN_LEVEL",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "R_DEST_CITY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "FD_CARRIERDELAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_VISI",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_SEA_PRESSURE",
+      "dataType" : "DOUBLE",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "FD_NASDELAY",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_WIND_MAX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "R_DEST_DIVISION_NAME",
+      "dataType" : "CHAR",
+      "length" : 62,
+      "nullable" : true
+    }, {
+      "name" : "P_AIRCRAFT_MODEL",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "R_DEST_LATITUDE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "W_DEST_FOG",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "FT_TAXIOUT",
+      "dataType" : "VARCHAR",
+      "length" : 250,
+      "nullable" : true
+    }, {
+      "name" : "R_DEST_LONGITUDE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

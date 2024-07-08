@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "DF_TWEET_ECHOS2996622827",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ECHOER_RT_USER_ID4081775374",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "ECHOER_USER_FOLLOWER1974525847",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "ECHOER_USER_ID2511615648",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "ECHOES_COUNTER4215599866",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

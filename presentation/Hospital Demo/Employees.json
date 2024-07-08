@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Employees",
+    "presentationColumns" : [ {
+      "name" : "Employee Name",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Employees.EMPLOYEE NAME"
+    }, {
+      "name" : "Pay Grade",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Employees.PAY GRADE"
+    }, {
+      "name" : "High Potential",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Employees.HIGH POTENTIAL"
+    }, {
+      "name" : "Highest Degree",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Employees.HIGHEST DEGREE"
+    }, {
+      "name" : "Age Group",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Employees.AGE GROUP"
+    } ]
+  }
+}
