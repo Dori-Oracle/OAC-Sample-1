@@ -1,8 +1,27 @@
 {
   "logicalTable" : {
-    "name" : "Fact Actuals",
+    "name" : "Facts",
     "type" : "FACT",
     "logicalColumns" : [ {
+      "name" : "Budget",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_BUDGETS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.F_BUDGETS.BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:Hospital Demo.Dim Employees.Total", "logicalLevel:Hospital Demo.Dim Time.Month" ]
+      }
+    }, {
       "name" : "Actual",
       "dataType" : "NUMERIC",
       "writeable" : false,
@@ -22,6 +41,15 @@
       }
     } ],
     "logicalTableSources" : [ {
+      "name" : "F_BUDGETS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsampleDori.DORI.F_BUDGETS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
       "name" : "F_ACTUALS",
       "disable" : false,
       "tableMapping" : {
@@ -42,12 +70,12 @@
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"
     }, {
-      "rightTable" : "logicalTable:Hospital Demo.Dim Employees",
+      "rightTable" : "logicalTable:Hospital Demo.Dim Time",
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"
     }, {
-      "rightTable" : "logicalTable:Hospital Demo.Dim Time",
+      "rightTable" : "logicalTable:Hospital Demo.Dim Employees",
       "joinType" : "INNER",
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"

@@ -16,6 +16,21 @@
     }, {
       "name" : "Age Group",
       "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Employees.AGE GROUP"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Employees",
+      "sourceLogicalTable" : "logicalTable:Hospital Demo.Dim Employees",
+      "localization" : { },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Employees.Total",
+        "localization" : { }
+      }, {
+        "name" : "Employee",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Employees.Employee",
+        "displayColumn" : "presentationColumn:Hospital Demo.Employees.Employee Name",
+        "localization" : { }
+      } ]
     } ]
   }
 }
