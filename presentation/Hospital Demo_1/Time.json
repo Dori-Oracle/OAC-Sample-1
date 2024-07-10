@@ -1,0 +1,30 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Time.DAY"
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Time.WEEK"
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Time.MONTH"
+    }, {
+      "name" : "Month Number",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Time.MONTH NBR"
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Time.MONTH NAME"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Time.QUARTER"
+    }, {
+      "name" : "Half Year",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Time.HALF"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Time.YEAR"
+    } ]
+  }
+}
