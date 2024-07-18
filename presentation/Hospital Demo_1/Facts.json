@@ -7,6 +7,12 @@
     }, {
       "name" : "Actual",
       "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Facts - Actuals.Actual"
+    }, {
+      "name" : "Is Employee Level Detail",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Facts - Budgets.Is Employee Level Detail"
+    }, {
+      "name" : "Is Employee Level Detail (actual)",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Facts - Actuals.Is Employee Level Detail (actual)"
     } ]
   }
 }

@@ -21,21 +21,40 @@
         "dataIsDense" : false,
         "aggregateByLevels" : [ "logicalLevel:Hospital Demo_1.Dim Time.Month", "logicalLevel:Hospital Demo_1.Dim Employees.Total" ]
       }
+    }, {
+      "name" : "Is Employee Level Detail",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "1"
+        }
+      },
+      "aggregation" : {
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:Hospital Demo_1.Dim Employees.Employee" ]
+      }
+    }, {
+      "name" : "Is Employee Level Total",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "1"
+        }
+      },
+      "aggregation" : {
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:Hospital Demo_1.Dim Employees.Total" ]
+      }
     } ],
     "logicalTableSources" : [ {
       "name" : "F_BUDGETS",
       "disable" : false,
       "tableMapping" : {
         "tables" : [ "physicalTable:ADWsampleDori.DORI.F_BUDGETS" ]
-      },
-      "combineWithOtherFragments" : false,
-      "enableFragmentSelection" : false,
-      "distinctValues" : false
-    }, {
-      "name" : "F_ACTUALS",
-      "disable" : false,
-      "tableMapping" : {
-        "tables" : [ "physicalTable:ADWsampleDori.DORI.F_ACTUALS" ]
       },
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
@@ -54,11 +73,6 @@
     }, {
       "rightTable" : "logicalTable:Hospital Demo_1.Dim Time",
       "joinType" : "INNER",
-      "cardinality" : "MANY_TO_ONE",
-      "drivingTable" : "None"
-    }, {
-      "rightTable" : "logicalTable:Hospital Demo_1.Dim Employees",
-      "joinType" : "RIGHT_OUTER",
       "cardinality" : "MANY_TO_ONE",
       "drivingTable" : "None"
     } ]

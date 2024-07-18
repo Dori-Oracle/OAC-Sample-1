@@ -16,6 +16,9 @@
     }, {
       "name" : "Age Group",
       "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Employees.AGE GROUP"
+    }, {
+      "name" : "Employee Count",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Employees.Employee Count - emp table"
     } ],
     "hierarchies" : [ {
       "name" : "Employees",

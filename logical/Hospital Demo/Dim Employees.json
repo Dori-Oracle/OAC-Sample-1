@@ -2,22 +2,8 @@
   "logicalTable" : {
     "name" : "Dim Employees",
     "type" : "DIMENSION",
+    "primaryKey" : [ "EMPLOYEE NAME" ],
     "logicalColumns" : [ {
-      "name" : "EMPLOYEE ID",
-      "dataType" : "NUMERIC",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "D_EMPLOYEES",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_EMPLOYEES.EMPLOYEE_ID" ]
-          }
-        } ]
-      },
-      "logicalLevel" : "Employee"
-    }, {
       "name" : "EMPLOYEE NAME",
       "dataType" : "VARCHAR",
       "writeable" : false,
@@ -118,7 +104,6 @@
         "numberOfElements" : 1,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
-        "primaryKey" : [ "EMPLOYEE ID" ],
         "displayKey" : "EMPLOYEE NAME"
       } ],
       "logicalHierarchies" : [ {

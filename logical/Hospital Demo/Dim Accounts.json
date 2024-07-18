@@ -3,20 +3,6 @@
     "name" : "Dim Accounts",
     "type" : "DIMENSION",
     "logicalColumns" : [ {
-      "name" : "ACCOUNT ID",
-      "dataType" : "NUMERIC",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "D_ACCOUNTS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_ACCOUNTS.ACCOUNT_ID" ]
-          }
-        } ]
-      }
-    }, {
       "name" : "ACCOUNT",
       "dataType" : "VARCHAR",
       "writeable" : false,
@@ -69,6 +55,6 @@
       "enableFragmentSelection" : false,
       "distinctValues" : false
     } ],
-    "primaryKey" : [ "ACCOUNT ID" ]
+    "primaryKey" : [ "ACCOUNT CODE" ]
   }
 }

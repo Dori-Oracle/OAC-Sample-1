@@ -3,6 +3,24 @@
     "name" : "Facts",
     "type" : "FACT",
     "logicalColumns" : [ {
+      "name" : "Actual",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_ACTUALS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.F_ACTUALS.ACTUAL" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false
+      }
+    }, {
       "name" : "Budget",
       "dataType" : "NUMERIC",
       "writeable" : false,
@@ -21,24 +39,6 @@
         "dataIsDense" : false,
         "aggregateByLevels" : [ "logicalLevel:Hospital Demo.Dim Employees.Total", "logicalLevel:Hospital Demo.Dim Time.Month" ]
       }
-    }, {
-      "name" : "Actual",
-      "dataType" : "NUMERIC",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "F_ACTUALS",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.F_ACTUALS.ACTUAL" ]
-          }
-        } ]
-      },
-      "aggregation" : {
-        "rule" : "SUM",
-        "dataIsDense" : false
-      }
     } ],
     "logicalTableSources" : [ {
       "name" : "F_BUDGETS",
@@ -46,6 +46,7 @@
       "tableMapping" : {
         "tables" : [ "physicalTable:ADWsampleDori.DORI.F_BUDGETS" ]
       },
+      "dataGranularity" : [ "logicalLevel:Hospital Demo.Dim Employees.Total" ],
       "combineWithOtherFragments" : false,
       "enableFragmentSelection" : false,
       "distinctValues" : false

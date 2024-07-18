@@ -25,6 +25,46 @@
     }, {
       "name" : "Year",
       "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.YEAR"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time",
+      "sourceLogicalTable" : "logicalTable:Hospital Demo.Dim Time",
+      "localization" : { },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Total",
+        "localization" : { }
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Year",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Year",
+        "localization" : { }
+      }, {
+        "name" : "Half Year",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Half Year",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Half Year",
+        "localization" : { }
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Quarter",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Quarter",
+        "localization" : { }
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Month",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Month",
+        "localization" : { }
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Week",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Week",
+        "localization" : { }
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Day",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Day",
+        "localization" : { }
+      } ]
     } ]
   }
 }

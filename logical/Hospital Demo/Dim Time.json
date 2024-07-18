@@ -2,22 +2,8 @@
   "logicalTable" : {
     "name" : "Dim Time",
     "type" : "DIMENSION",
+    "primaryKey" : [ "DAY" ],
     "logicalColumns" : [ {
-      "name" : "DATE ID",
-      "dataType" : "VARCHAR",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "PHYSICAL_COLUMNS",
-        "physicalMappings" : [ {
-          "logicalTableSource" : "D_TIME",
-          "physicalExpression" : {
-            "expressionTemplate" : "%1",
-            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_TIME.DATE_ID" ]
-          }
-        } ]
-      },
-      "logicalLevel" : "Day"
-    }, {
       "name" : "DAY",
       "dataType" : "DATETIME",
       "writeable" : false,
@@ -162,7 +148,8 @@
         "numberOfElements" : 2000,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
-        "displayKey" : "DAY"
+        "displayKey" : "DAY",
+        "chronologicalKey" : [ "DAY" ]
       }, {
         "name" : "Year",
         "numberOfElements" : 5,

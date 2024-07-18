@@ -20,17 +20,33 @@
         "rule" : "SUM",
         "dataIsDense" : false
       }
+    }, {
+      "name" : "Employee Count",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "%1",
+          "expressionObjects" : [ "logicalColumn:Hospital Demo_1.Dim Employees.EMPLOYEE ID" ]
+        }
+      }
+    }, {
+      "name" : "Is Employee Level Detail (actual)",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : "1"
+        }
+      },
+      "aggregation" : {
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:Hospital Demo_1.Dim Employees.Employee" ]
+      }
     } ],
     "logicalTableSources" : [ {
-      "name" : "F_BUDGETS",
-      "disable" : false,
-      "tableMapping" : {
-        "tables" : [ "physicalTable:ADWsampleDori.DORI.F_BUDGETS" ]
-      },
-      "combineWithOtherFragments" : false,
-      "enableFragmentSelection" : false,
-      "distinctValues" : false
-    }, {
       "name" : "F_ACTUALS",
       "disable" : false,
       "tableMapping" : {
