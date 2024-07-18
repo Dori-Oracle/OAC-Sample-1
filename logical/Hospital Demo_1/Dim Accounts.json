@@ -17,7 +17,7 @@
         } ]
       }
     }, {
-      "name" : "ACCOUNT",
+      "name" : "Account",
       "dataType" : "VARCHAR",
       "writeable" : false,
       "logicalColumnSource" : {
@@ -31,7 +31,7 @@
         } ]
       }
     }, {
-      "name" : "ACCOUNT GROUP",
+      "name" : "Account Group",
       "dataType" : "VARCHAR",
       "writeable" : false,
       "logicalColumnSource" : {
@@ -45,8 +45,9 @@
         } ]
       }
     }, {
-      "name" : "ACCOUNT CODE",
+      "name" : "Account Code",
       "dataType" : "NUMERIC",
+      "descriptorColumn" : "Account",
       "writeable" : false,
       "logicalColumnSource" : {
         "derivedFrom" : "PHYSICAL_COLUMNS",

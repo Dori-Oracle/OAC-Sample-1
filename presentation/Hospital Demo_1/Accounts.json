@@ -3,13 +3,13 @@
     "name" : "Accounts",
     "presentationColumns" : [ {
       "name" : "Account",
-      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.ACCOUNT"
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.Account"
     }, {
       "name" : "Account Group",
-      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.ACCOUNT GROUP"
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.Account Group"
     }, {
       "name" : "Account Code",
-      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.ACCOUNT CODE"
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.Account Code"
     } ]
   }
 }

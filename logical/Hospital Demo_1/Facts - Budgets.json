@@ -21,34 +21,6 @@
         "dataIsDense" : false,
         "aggregateByLevels" : [ "logicalLevel:Hospital Demo_1.Dim Time.Month", "logicalLevel:Hospital Demo_1.Dim Employees.Total" ]
       }
-    }, {
-      "name" : "Is Employee Level Detail",
-      "dataType" : "INT",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "LOGICAL_COLUMNS",
-        "logicalExpression" : {
-          "expressionTemplate" : "1"
-        }
-      },
-      "aggregation" : {
-        "dataIsDense" : false,
-        "aggregateByLevels" : [ "logicalLevel:Hospital Demo_1.Dim Employees.Employee" ]
-      }
-    }, {
-      "name" : "Is Employee Level Total",
-      "dataType" : "INT",
-      "writeable" : false,
-      "logicalColumnSource" : {
-        "derivedFrom" : "LOGICAL_COLUMNS",
-        "logicalExpression" : {
-          "expressionTemplate" : "1"
-        }
-      },
-      "aggregation" : {
-        "dataIsDense" : false,
-        "aggregateByLevels" : [ "logicalLevel:Hospital Demo_1.Dim Employees.Total" ]
-      }
     } ],
     "logicalTableSources" : [ {
       "name" : "F_BUDGETS",
