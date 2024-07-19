@@ -1,0 +1,71 @@
+{
+  "physicalTable" : {
+    "name" : "NAB_C_FACT_ACTIVITIES",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACTIVITY_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "ACTIVITY_DATE",
+      "dataType" : "DATETIME",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "ACTIVITY_ID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "ACTIVITY_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "ACTIVITY_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "BRANCHID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "CAMPAIGNID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "COMPLETED_DATE",
+      "dataType" : "DATETIME",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "CUSTID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "DUE_IN_DAYS",
+      "dataType" : "INT",
+      "length" : 2,
+      "nullable" : true
+    }, {
+      "name" : "PRIORITY",
+      "dataType" : "VARCHAR",
+      "length" : 40,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCTID",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

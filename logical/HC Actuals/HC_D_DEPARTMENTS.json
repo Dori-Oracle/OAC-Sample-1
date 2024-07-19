@@ -1,0 +1,71 @@
+{
+  "logicalTable" : {
+    "name" : "HC_D_DEPARTMENTS",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "DEPARTMENT" ],
+    "logicalColumns" : [ {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_DEPARTMENTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.BICS_DEMOS.HC_D_DEPARTMENTS.DEPARTMENT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "HC_D_DEPARTMENTS Detail"
+    }, {
+      "name" : "HOSPITAL",
+      "dataType" : "VARCHAR",
+      "writeable" : true,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "HC_D_DEPARTMENTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.BICS_DEMOS.HC_D_DEPARTMENTS.HOSPITAL" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "HC_D_DEPARTMENTS Detail"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "HC_D_DEPARTMENTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsamplePublic.BICS_DEMOS.HC_D_DEPARTMENTS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "HC_D_DEPARTMENTS Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "HC_D_DEPARTMENTS Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "HC_D_DEPARTMENTS Detail",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "DEPARTMENT" ],
+        "displayKey" : "DEPARTMENT"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "HC_D_DEPARTMENTSDim",
+        "levels" : [ "HC_D_DEPARTMENTS Total", "HC_D_DEPARTMENTS Detail" ]
+      } ]
+    }
+  }
+}

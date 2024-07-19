@@ -1,0 +1,35 @@
+{
+  "physicalTable" : {
+    "name" : "D_HOSP_DEPT",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "HOSP_DEPT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "DEPARTMENT",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "HOSPITAL_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "additionalKeys" : [ [ "HOSP_DEPT_ID" ] ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    },
+    "joins" : [ {
+      "rightTable" : "physicalTable:ADWsampleDori.DORI.D_HOSPITAL",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsampleDori.DORI.D_HOSP_DEPT.HOSPITAL_ID",
+        "rightColumn" : "physicalColumn:ADWsampleDori.DORI.D_HOSPITAL.HOSPITAL_ID"
+      } ]
+    } ]
+  }
+}

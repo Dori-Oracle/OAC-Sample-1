@@ -1,0 +1,71 @@
+{
+  "physicalTable" : {
+    "name" : "RTD_TXN_CHOSEG",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "APPLICATION",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_GROUP",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_SUBGROUP",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_SUBID",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "CNTINSEGMENT",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "NOOFTRANS",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "PCTOFTRANS",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "SEGMENT",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SEGMENT_ID",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

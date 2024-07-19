@@ -1,0 +1,9 @@
+{
+  "physicalTable": {
+    "name": "US_AIRLINES_DELAY D",
+    "sourceTable": "physicalTable:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY",
+    "caching": {
+      "enable": true
+    }
+  }
+}

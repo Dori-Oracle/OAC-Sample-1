@@ -1,0 +1,41 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_D_TIME.DAY"
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_D_TIME.MONTH"
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_D_TIME.MONTH_NAME"
+    }, {
+      "name" : "Month Number",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_D_TIME.MONTH_NBR"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_D_TIME.YEAR"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time Hier",
+      "sourceLogicalTable" : "logicalTable:HC Actuals.HC_D_TIME",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:HC Actuals.HC_D_TIME.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:HC Actuals.HC_D_TIME.Year",
+        "displayColumn" : "presentationColumn:Hospital Actuals.Time.Year"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:HC Actuals.HC_D_TIME.Month",
+        "displayColumn" : "presentationColumn:Hospital Actuals.Time.Month Name"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:HC Actuals.HC_D_TIME.Day",
+        "displayColumn" : "presentationColumn:Hospital Actuals.Time.Day"
+      } ]
+    } ]
+  }
+}

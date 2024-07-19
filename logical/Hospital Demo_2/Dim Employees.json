@@ -1,0 +1,136 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Employees",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Employee Name" ],
+    "logicalColumns" : [ {
+      "name" : "Employee Name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_EMPLOYEES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_EMPLOYEES.EMPLOYEE_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Employee"
+    }, {
+      "name" : "Pay Grade",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_EMPLOYEES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_EMPLOYEES.PAY_GRADE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Employee"
+    }, {
+      "name" : "High Potential",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_EMPLOYEES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_EMPLOYEES.HIGH_POTENTIAL" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Employee"
+    }, {
+      "name" : "Highest Degree",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_EMPLOYEES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_EMPLOYEES.HIGHEST_DEGREE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Employee"
+    }, {
+      "name" : "Age Group",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_EMPLOYEES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_EMPLOYEES.AGE_GROUP" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Employee"
+    }, {
+      "name" : "Employee Count - Emp Table",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_EMPLOYEES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_EMPLOYEES.EMPLOYEE_ID" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "COUNT",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:Hospital Demo_2.Dim Employees.Employee" ]
+      },
+      "logicalLevel" : "Employee"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_EMPLOYEES",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsampleDori.DORI.D_EMPLOYEES" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Total",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Employee",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Employee Name" ],
+        "displayKey" : "Employee Name"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Employees",
+        "levels" : [ "Total", "Employee" ]
+      } ]
+    }
+  }
+}

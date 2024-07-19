@@ -1,0 +1,86 @@
+{
+  "physicalTable" : {
+    "name" : "RTD_TXN_FACTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PR_ATTRIBUTENAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "PR_ATTRIBUTETYPE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "STID",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "TIMEWINDOW",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "TOTALCOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "ATTRIBUTEVALUE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CHOICE_ID",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "COID",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "CORRELATION",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "CO_ATTRIBUTENAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CO_ATTRIBUTETYPE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "ID",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "MODELQUALITY",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "PREDICTIVENESS",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    }, {
+      "name" : "PRID",
+      "dataType" : "DOUBLE",
+      "length" : 25,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

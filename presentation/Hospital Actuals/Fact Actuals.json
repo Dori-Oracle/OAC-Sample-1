@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Fact Actuals",
+    "presentationColumns" : [ {
+      "name" : "ACTUAL",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_F_ACTUALS.ACTUAL"
+    }, {
+      "name" : "BUDGET",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_F_ACTUALS.BUDGET"
+    }, {
+      "name" : "Distinct Accounts, Qtr",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_F_ACTUALS.Distinct Accounts, Qtr"
+    }, {
+      "name" : "Account Count",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_F_ACTUALS.Account Count"
+    }, {
+      "name" : "Actual Count",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_F_ACTUALS.Actual Count"
+    }, {
+      "name" : "ACTUAL#1",
+      "sourceLogicalColumn" : "logicalColumn:HC Actuals.HC_F_ACTUALS.ACTUAL#1"
+    } ]
+  }
+}

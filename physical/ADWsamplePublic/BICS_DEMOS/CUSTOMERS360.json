@@ -1,0 +1,71 @@
+{
+  "physicalTable" : {
+    "name" : "CUSTOMERS360",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AFFINITY_CARD",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "CUST_CREDIT_LIMIT",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_GENDER",
+      "dataType" : "CHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "CUST_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CUST_INCOME_LEVEL",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : true
+    }, {
+      "name" : "CUST_MARITAL_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "CUST_YEAR_OF_BIRTH",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "EDUCATION",
+      "dataType" : "VARCHAR",
+      "length" : 21,
+      "nullable" : true
+    }, {
+      "name" : "HOUSEHOLD_SIZE",
+      "dataType" : "VARCHAR",
+      "length" : 21,
+      "nullable" : true
+    }, {
+      "name" : "OCCUPATION",
+      "dataType" : "VARCHAR",
+      "length" : 21,
+      "nullable" : true
+    }, {
+      "name" : "YRS_RESIDENCE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "Y_BOX_GAMES",
+      "dataType" : "DOUBLE",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

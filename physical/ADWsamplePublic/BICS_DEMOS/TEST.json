@@ -1,0 +1,16 @@
+{
+  "physicalTable" : {
+    "name" : "TEST",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "NAME",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

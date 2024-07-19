@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "Hospital Departments",
+    "presentationColumns" : [ {
+      "name" : "Department",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_2.Dim Hospital Departments.Department"
+    }, {
+      "name" : "Hospital",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_2.Dim Hospital Departments.Hospital"
+    } ]
+  }
+}

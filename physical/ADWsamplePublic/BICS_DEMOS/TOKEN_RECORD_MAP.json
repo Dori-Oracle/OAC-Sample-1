@@ -1,0 +1,26 @@
+{
+  "physicalTable" : {
+    "name" : "TOKEN_RECORD_MAP",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "RECORDID",
+      "dataType" : "VARCHAR",
+      "length" : 200,
+      "nullable" : true
+    }, {
+      "name" : "TEXT_SCORE",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "TOKEN_TEXT",
+      "dataType" : "VARCHAR",
+      "length" : 64,
+      "nullable" : false
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

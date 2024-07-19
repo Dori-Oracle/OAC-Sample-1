@@ -1,0 +1,7 @@
+{
+  "businessModel" : {
+    "name" : "Hospital Demo_2",
+    "description" : "Use for Logical Model demonstrations. Merge Dept and Hosp into 1 LTS",
+    "disable" : false
+  }
+}

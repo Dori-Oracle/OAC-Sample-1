@@ -1,0 +1,82 @@
+{
+  "logicalTable" : {
+    "name" : "Facts",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Actual",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_ACTUALS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.F_ACTUALS.ACTUAL" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:Hospital Demo.Dim Employees.Employee", "logicalLevel:Hospital Demo.Dim Time.Day" ]
+      }
+    }, {
+      "name" : "Budget",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_BUDGETS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.F_BUDGETS.BUDGET" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:Hospital Demo.Dim Employees.Total", "logicalLevel:Hospital Demo.Dim Time.Month" ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "F_BUDGETS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsampleDori.DORI.F_BUDGETS" ]
+      },
+      "dataGranularity" : [ "logicalLevel:Hospital Demo.Dim Employees.Total" ],
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    }, {
+      "name" : "F_ACTUALS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsampleDori.DORI.F_ACTUALS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Hospital Demo.Dim Accounts",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "logicalTable:Hospital Demo.Dim Employees",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "logicalTable:Hospital Demo.Dim Hospital Departments",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "logicalTable:Hospital Demo.Dim Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "logicalTable" : {
+    "name" : "Airlines Attributes",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "F_PILOT_ID",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.F_PILOT_ID" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "F_CARRIER",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.F_CARRIER" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "F_DEST",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.F_DEST" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "R_DEST_AIRPORT_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.R_DEST_AIRPORT_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "R_DEST_CITY_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.R_DEST_CITY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "R_DEST_REGION_NAME",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.R_DEST_REGION_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "R_DEST_STATE_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.R_DEST_STATE_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "F_ORIGIN",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.F_ORIGIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "R_ORIG_AIRPORT_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.R_ORIG_AIRPORT_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "R_ORIG_CITY_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.R_ORIG_CITY_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "R_ORIG_REGION_NAME",
+      "dataType" : "CHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.R_ORIG_REGION_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "R_ORIG_STATE_NAME",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.R_ORIG_STATE_NAME" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_DEST_TEMP",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_DEST_TEMP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_DEST_TEMP_MAX",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_DEST_TEMP_MAX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_DEST_TEMP_MIN",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_DEST_TEMP_MIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_ORIG_TEMP",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_ORIG_TEMP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_ORIG_TEMP_MAX",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_ORIG_TEMP_MAX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_ORIG_TEMP_MIN",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_ORIG_TEMP_MIN" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "US_AIRLINES_DELAY F",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "F_PILOT_ID", "F_CARRIER", "F_DEST", "F_ORIGIN" ]
+  }
+}

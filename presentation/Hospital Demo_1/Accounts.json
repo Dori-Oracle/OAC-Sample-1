@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Accounts",
+    "presentationColumns" : [ {
+      "name" : "Account",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.Account"
+    }, {
+      "name" : "Account Group",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.Account Group"
+    }, {
+      "name" : "Account Code",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo_1.Dim Accounts.Account Code"
+    } ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "logicalTable" : {
+    "name" : "Facts - Actuals",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "Actual",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "F_ACTUALS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.F_ACTUALS.ACTUAL" ]
+          }
+        } ]
+      },
+      "aggregation" : {
+        "rule" : "SUM",
+        "dataIsDense" : false,
+        "aggregateByLevels" : [ "logicalLevel:Hospital Demo_2.Dim Employees.Employee", "logicalLevel:Hospital Demo_2.Dim Time.Day" ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "F_ACTUALS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsampleDori.DORI.F_ACTUALS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Hospital Demo_2.Dim Accounts",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "logicalTable:Hospital Demo_2.Dim Employees",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "logicalTable:Hospital Demo_2.Dim Hospital Departments",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    }, {
+      "rightTable" : "logicalTable:Hospital Demo_2.Dim Time",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

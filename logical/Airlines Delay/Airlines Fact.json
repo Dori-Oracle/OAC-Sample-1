@@ -1,0 +1,120 @@
+{
+  "logicalTable" : {
+    "name" : "Airlines Fact",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "F_FLIGHTS",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.F_FLIGHTS" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_DEST_TEMP",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_DEST_TEMP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_DEST_TEMP_MAX",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_DEST_TEMP_MAX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_DEST_TEMP_MIN",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_DEST_TEMP_MIN" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_ORIG_TEMP",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_ORIG_TEMP" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_ORIG_TEMP_MAX",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_ORIG_TEMP_MAX" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "W_ORIG_TEMP_MIN",
+      "dataType" : "DOUBLE",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "US_AIRLINES_DELAY F",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F.W_ORIG_TEMP_MIN" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "US_AIRLINES_DELAY F",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsamplePublic.AIRLINES_NEW.US_AIRLINES_DELAY F" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "logicalTable:Airlines Delay.Airlines Attributes",
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ZERO_OR_ONE"
+    } ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "logicalTable" : {
+    "name" : "Dim Hospital Departments",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "Department",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_HOSP_DEPT and Hospital as one LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_HOSP_DEPT.DEPARTMENT" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "Hospital",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "D_HOSP_DEPT and Hospital as one LTS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:ADWsampleDori.DORI.D_HOSPITAL.HOSPITAL" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "D_HOSP_DEPT and Hospital as one LTS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:ADWsampleDori.DORI.D_HOSP_DEPT", "physicalTable:ADWsampleDori.DORI.D_HOSPITAL" ],
+        "logicalTableSourceJoins" : [ {
+          "leftTable" : "physicalTable:ADWsampleDori.DORI.D_HOSP_DEPT",
+          "rightTable" : "physicalTable:ADWsampleDori.DORI.D_HOSPITAL",
+          "joinType" : "INNER",
+          "disable" : false
+        } ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "Department", "Hospital" ]
+  }
+}

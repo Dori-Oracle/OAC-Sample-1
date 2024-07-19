@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "Facts",
+    "presentationColumns" : [ {
+      "name" : "Actual",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Facts.Actual"
+    }, {
+      "name" : "Budget",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Facts.Budget"
+    } ]
+  }
+}

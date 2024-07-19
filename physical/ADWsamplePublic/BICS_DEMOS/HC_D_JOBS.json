@@ -1,0 +1,31 @@
+{
+  "physicalTable" : {
+    "name" : "HC_D_JOBS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "EEO_JOB_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "JOB_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "JOB_DESCRIPTION",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PATCO_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "physicalTable" : {
+    "name" : "F_BUDGETS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "MONTH_NBR",
+      "dataType" : "VARCHAR",
+      "length" : 20,
+      "nullable" : true
+    }, {
+      "name" : "HOSP_DEPT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "ACCOUNT_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "BUDGET",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "joins" : [ {
+      "rightTable" : "physicalTable:ADWsampleDori.DORI.D_ACCOUNTS",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsampleDori.DORI.F_BUDGETS.ACCOUNT_ID",
+        "rightColumn" : "physicalColumn:ADWsampleDori.DORI.D_ACCOUNTS.ACCOUNT_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:ADWsampleDori.DORI.D_HOSP_DEPT",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsampleDori.DORI.F_BUDGETS.HOSP_DEPT_ID",
+        "rightColumn" : "physicalColumn:ADWsampleDori.DORI.D_HOSP_DEPT.HOSP_DEPT_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:ADWsampleDori.DORI.D_TIME",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:ADWsampleDori.DORI.F_BUDGETS.MONTH_NBR",
+        "rightColumn" : "physicalColumn:ADWsampleDori.DORI.D_TIME.MONTH_NBR"
+      } ]
+    } ]
+  }
+}

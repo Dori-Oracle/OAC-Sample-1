@@ -1,0 +1,91 @@
+{
+  "physicalTable" : {
+    "name" : "SDS_EXTN_ATTR_MD",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ACTIVE_FLG",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "CARDINALITY",
+      "dataType" : "VARCHAR",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "CDC$_DML_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "CDC$_RPL_LAST_UPDATE_DATE",
+      "dataType" : "TIMESTAMP",
+      "length" : 1,
+      "nullable" : true
+    }, {
+      "name" : "CDC$_RPL_PROCESS_ID",
+      "dataType" : "DOUBLE",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "CDC$_SRC_LAST_UPDATE_DATE",
+      "dataType" : "TIMESTAMP",
+      "length" : 22,
+      "nullable" : true
+    }, {
+      "name" : "COLUMN_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : true
+    }, {
+      "name" : "DATA_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : true
+    }, {
+      "name" : "FIELD_SUBTYPE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "FIELD_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "LENGTH",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "SCALE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "SRC_ATTR_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SRC_ENTITY_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "SRC_LOOKUP_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "TABLE_NAME",
+      "dataType" : "VARCHAR",
+      "length" : 30,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

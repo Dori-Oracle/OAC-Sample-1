@@ -1,0 +1,11 @@
+{
+  "subjectArea" : {
+    "name" : "Airlines Delay",
+    "sourceBusinessModel" : "businessModel:Airlines Delay",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Airlines Delay.Airlines Fact"
+    }, {
+      "name" : "presentationTable:Airlines Delay.Airlines Attributes"
+    } ]
+  }
+}

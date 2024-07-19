@@ -1,0 +1,12 @@
+{
+  "presentationTable" : {
+    "name" : "Facts",
+    "presentationColumns" : [ {
+      "name" : "UNITS",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_REVENUE_F.UNITS"
+    }, {
+      "name" : "REVENUE",
+      "sourceLogicalColumn" : "logicalColumn:Employee Revenue.SAMP_REVENUE_F.REVENUE"
+    } ]
+  }
+}

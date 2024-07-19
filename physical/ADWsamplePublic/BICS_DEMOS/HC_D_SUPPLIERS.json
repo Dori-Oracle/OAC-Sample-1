@@ -1,0 +1,41 @@
+{
+  "physicalTable" : {
+    "name" : "HC_D_SUPPLIERS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "DIVERSITY",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "MINORITY_OWNED",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "PARENT_SUPPLIER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "SMALL_BUS",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    }, {
+      "name" : "SUPPLIER",
+      "dataType" : "VARCHAR",
+      "length" : 50,
+      "nullable" : true
+    }, {
+      "name" : "WOMAN_OWNED",
+      "dataType" : "VARCHAR",
+      "length" : 10,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "Employee Revenue",
+    "sourceBusinessModel" : "businessModel:Employee Revenue",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Employee Revenue.Employee"
+    }, {
+      "name" : "presentationTable:Employee Revenue.Date"
+    }, {
+      "name" : "presentationTable:Employee Revenue.Facts"
+    } ]
+  }
+}

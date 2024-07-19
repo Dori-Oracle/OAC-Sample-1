@@ -1,0 +1,17 @@
+{
+  "subjectArea" : {
+    "name" : "Hospital Demo_1",
+    "sourceBusinessModel" : "businessModel:Hospital Demo_1",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Hospital Demo_1.Time"
+    }, {
+      "name" : "presentationTable:Hospital Demo_1.Accounts"
+    }, {
+      "name" : "presentationTable:Hospital Demo_1.Employees"
+    }, {
+      "name" : "presentationTable:Hospital Demo_1.Hospital Departments"
+    }, {
+      "name" : "presentationTable:Hospital Demo_1.Facts"
+    } ]
+  }
+}

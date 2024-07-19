@@ -1,0 +1,441 @@
+{
+  "physicalTable" : {
+    "name" : "CREDIT_SCORING_100K",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "AGE",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "AVERAGE_JOB_CHANGING_PERIOD",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "AVERAGE_NO_OF_RETWEETS",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CHURN_RATE_OF_ACCOUNT_NO1",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CHURN_RATE_OF_ACCOUNT_NON",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CHURN_RATE_OF_CC1",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CHURN_RATE_OF_CC2",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CHURN_RATE_OF_CCN",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "CHURN_RATE__OF_ACCOUNT_NO2",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CITY_SIZE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CONSUMER_CONFIDENCE_INDEX",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CREDIT_CARD_UTILIZATION_RATE",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "CREDIT_HISTORY",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CREDIT_SCORE_BIN",
+      "dataType" : "VARCHAR",
+      "length" : 100,
+      "nullable" : true
+    }, {
+      "name" : "CURRENT_ADDRESS_DURATION",
+      "dataType" : "INT",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_DEPTH",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_DMG_SEGMENT",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_ID",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_LIFETIME_VALUE",
+      "dataType" : "INT",
+      "length" : 8,
+      "nullable" : true
+    }, {
+      "name" : "CUSTOMER_VALUE_SEGMENT",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "DEBTOR_GUARANTORS",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "DELINQUENCY_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "EARNINGS",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "EDUCATION_LEVEL",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "FACEBOOK_INFLUENCE_SCORE",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "FAMILY_SIZE",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "FATHERS_JOB",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "FIXED_INCOME_RATE",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "GENDER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "HAS_CHECKING_ACCOUNT",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "HAS_COLLATERAL",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "HAS_OWN_PHONE_NO",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "HAS_SAME_PHONE_NO_SINCE",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "HEALTH_SCORE",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "HIGHEST_CREDIT_CARD_LIMIT",
+      "dataType" : "INT",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "HOUSING_INDEX",
+      "dataType" : "DOUBLE",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "INCOME",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "INFLATION_RATE",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "INTEREST_RATE",
+      "dataType" : "DOUBLE",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "IS_FOREIGN_WORKER",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "IS_POSTED_STH_WITHIN_A_MONTH",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "JOB_FRIENDS_PERCENTAGE",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "LIFECYCLE_STAGE",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LOAN_AMOUNT",
+      "dataType" : "DOUBLE",
+      "length" : 38,
+      "nullable" : true
+    }, {
+      "name" : "LOAN_LENGTH",
+      "dataType" : "INT",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "LOAN_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "MARITAL_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "MAX_CC_SPENT_AMOUNT",
+      "dataType" : "INT",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "MAX_CC_SPENT_AMOUNT_PREV",
+      "dataType" : "INT",
+      "length" : 7,
+      "nullable" : true
+    }, {
+      "name" : "MODE_JOB_OF_CONTACTS",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "MOST_POPULAR_POST_CATEGORY",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "MOST_SPENDING_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "MOTHERS_JOB",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "NEW_BANKRUPTCY",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "NO_OF_DEBTORS_ON_FB",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NO_OF_FOLLOWERS_ON_TWITTER",
+      "dataType" : "INT",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "NO_OF_LINKEDIN_CONTACTS",
+      "dataType" : "INT",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_INACTIVE_ACCOUNTS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NO_OF_PROTESTOR_COMMENTS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_INQUIRIES",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NO_OF_RECRUITERS_ON_LINKEDIN",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_LIABLES",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NO_OF_TOTAL_ENDORSEMENTS",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_OPEN_ACCOUNTS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_CLOSED_ACCOUNTS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_PRIOR_LOANS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_COLLECTIONS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_PROTESTOR_LIKES",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_CURRENT_ACCOUNTS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "NUMBER_OF_SAVING_ACCOUNTS",
+      "dataType" : "INT",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "OCCUPATION",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "PERCENTAGE_HIGH_SCHOOL",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "PERCENTAGE_MASTERS",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "PERCENTAGE_OTHER",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "PERCENTAGE_PHD_ON_LINKEDIN",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "PERCENTAGE_UG",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "PRESENT_EMPLOYMENT_SINCE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "PRODUCTION_INDEX",
+      "dataType" : "DOUBLE",
+      "length" : 6,
+      "nullable" : true
+    }, {
+      "name" : "REGION",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "RESIDENTAL_STATUS",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "SCHOOL_FRIENDS_PERCENTAGE",
+      "dataType" : "DOUBLE",
+      "length" : 3,
+      "nullable" : true
+    }, {
+      "name" : "SECOND_MOST_SPENDING_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "TENURE",
+      "dataType" : "INT",
+      "length" : 4,
+      "nullable" : true
+    }, {
+      "name" : "THIRD_MOST_SPENDING_TYPE",
+      "dataType" : "VARCHAR",
+      "length" : 26,
+      "nullable" : true
+    }, {
+      "name" : "UNEMPLOYMENT_INDEX",
+      "dataType" : "DOUBLE",
+      "length" : 5,
+      "nullable" : true
+    }, {
+      "name" : "WEALTH",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

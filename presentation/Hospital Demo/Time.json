@@ -1,0 +1,62 @@
+{
+  "presentationTable" : {
+    "name" : "Time",
+    "presentationColumns" : [ {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.DAY"
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.WEEK"
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.MONTH"
+    }, {
+      "name" : "Month Number",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.MONTH NBR"
+    }, {
+      "name" : "Month Name",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.MONTH NAME"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.QUARTER"
+    }, {
+      "name" : "Half Year",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.HALF"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Hospital Demo.Dim Time.YEAR"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Time",
+      "sourceLogicalTable" : "logicalTable:Hospital Demo.Dim Time",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Year",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Year"
+      }, {
+        "name" : "Half Year",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Half Year",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Half Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Quarter",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Month",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Month"
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Week",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Week"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:Hospital Demo.Dim Time.Day",
+        "displayColumn" : "presentationColumn:Hospital Demo.Time.Day"
+      } ]
+    } ]
+  }
+}
